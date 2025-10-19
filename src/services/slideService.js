@@ -1,14 +1,14 @@
-import { config } from '../config';
+import { config as CONFIG } from '../config';
 
 export const slideService = {
   async fetchProjectList() {
-    const response = await fetch(`${config.slidesBasePath}/index.txt`);
+    const response = await fetch(`${CONFIG.slidesBasePath}/index.txt`);
     const text = await response.text();
     return text.split('\n').filter(line => line.trim() !== '');
   },
 
 async fetchProjectConfig(projectName) {
-  const url = `${config.slidesBasePath}/${projectName}/config.json`;
+  const url = `${CONFIG.slidesBasePath}/${projectName}/config.json`;
   console.log('Fetching config from:', url);
   const response = await fetch(url);
   const text = await response.text();
@@ -16,10 +16,10 @@ async fetchProjectConfig(projectName) {
   return JSON.parse(text);
 },
 
-  async fetchProjectDescription(projectName, descriptionFile) {
-    const response = await fetch(`${config.slidesBasePath}/${projectName}/${descriptionFile}`);
-    return await response.text();
-  },
+async fetchProjectDescription(projectName, descriptionFile) {
+  const response = await fetch(`${CONFIG.slidesBasePath}/${projectName}/${descriptionFile}`);
+  return await response.text();
+},
 
 async fetchAllProjects() {
   try {
@@ -36,7 +36,7 @@ async fetchAllProjects() {
           name: projectName,
           ...config,
           description,
-          imageUrls: config.images.map(img => `/slides/${projectName}/${img}`)
+          imageUrls: config.images.map(img => `${CONFIG.slidesBasePath}/${projectName}/${img}`)
         };
       })
     );
@@ -45,7 +45,7 @@ async fetchAllProjects() {
     return projects;
   } catch (error) {
     console.error('Error fetching projects:', error);
-    return [];
+    throw error
   }
 }
 };
