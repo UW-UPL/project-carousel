@@ -1,0 +1,10 @@
+{
+  "title": "Test Project 3",
+  "descriptionFile": "description.md",
+  "layout": "layout1",
+  "images": ["image1.png"],
+  "metadata": {
+    "author": "Nicholas Yeung",
+    "date": "2025-10-17"
+  }
+}

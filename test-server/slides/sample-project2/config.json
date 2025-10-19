@@ -1,0 +1,10 @@
+{
+  "title": "Project Title 22222",
+  "descriptionFile": "description.md",
+  "layout": "layout1",
+  "images": ["image1.png"],
+  "metadata": {
+    "author": "Oliver Ohrt",
+    "date": "2025-10-17"
+  }
+}
