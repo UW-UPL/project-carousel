@@ -1,11 +1,10 @@
 {
-  "title": "Project Title",
+  "title": "Test Project 3",
   "descriptionFile": "description.md",
   "layout": "layout1",
-  "images": ["image1.png"],
-  "duration": 20,
+  "images": ["placeholder.png"],
   "metadata": {
-    "author": "Oliver Ohrt",
+    "author": "Nicholas Yeung",
     "date": "2025-10-17"
   }
 }
