@@ -26,8 +26,10 @@ function App() {
     async function loadProjects() {
       try {
         const data = await slideService.fetchAllProjects();
-        setProjects(data);
-        bufferProjects.current = data;
+        const finalSlide = { layout: 'final', id: 'final-slide' };
+        const projectsWithFinal = [...data, finalSlide];
+        setProjects(projectsWithFinal);
+        bufferProjects.current = projectsWithFinal;
         setLoading(false);
       } catch (err) {
         setError(err.message);
@@ -40,18 +42,20 @@ function App() {
     const pollInterval = setInterval(async () => {
       try {
         const newProjects = await slideService.fetchAllProjects();
+        const finalSlide = { layout: 'final', id: 'final-slide' };
+        const newProjectsWithFinal = [...newProjects, finalSlide];
         
         // prefetch images into browser cache
         bufferProjects.current.forEach((slide)=> {
-          slide.imageUrls.forEach((url)=> {
+          slide.imageUrls?.forEach((url)=> {
             fetch(url)
           })
         })
 
-        // Check if projects have changed
-        if (JSON.stringify(newProjects) !== JSON.stringify(bufferProjects.current)) {
+        // Check if projects have changed (excluding final slide from comparison)
+        if (JSON.stringify(newProjects) !== JSON.stringify(bufferProjects.current.slice(0, -1))) {
           console.log('Projects changed, staging update');
-          bufferProjects.current = newProjects;
+          bufferProjects.current = newProjectsWithFinal;
           pendingUpdate.current = true;
         }
       } catch (err) {

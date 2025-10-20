@@ -1,8 +1,8 @@
 {
   "title": "Project Title 22222",
-  "descriptionFile": "description.md",
+  "descriptionFile": "justtext.txt",
   "layout": "layout1",
-  "images": ["image1.png"],
+  "images": ["placeholder.png", "placeholder.png", "placeholder.png"],
   "metadata": {
     "author": "Oliver Ohrt",
     "date": "2025-10-17"

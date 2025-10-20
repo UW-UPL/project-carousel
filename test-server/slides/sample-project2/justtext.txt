@@ -1,0 +1,6 @@
+This is just some random text that isn't markdown
+
+And here is a second line as well
+Here we show that someone can also just upload a text file and it will also be able to render properly
+
+There are layouts that support up to 6 images

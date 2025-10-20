@@ -7,7 +7,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#b70101',
+        primary: {
+          DEFAULT: '#b70101',
+          light: '#fd4e4e',
+          dark: '#650101',
+        }
+      },
+      fontFamily: {
+        'alegreya': ['Alegreya Sans', 'sans-serif'],
       }
     },
   },

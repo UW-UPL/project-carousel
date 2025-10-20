@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { config } from '../config';
 import Layout1 from './Layout1';
+import Layout2 from './Layout2';
+import FinalSlide from './FinalSlide';
 
 function Carousel({ projects, onLoopStart }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,12 +32,16 @@ function Carousel({ projects, onLoopStart }) {
     switch (currentProject.layout) {
       case 'layout1':
         return Layout1;
+      case 'layout2':
+        return Layout2;
+      case 'final':
+        return FinalSlide;
       default:
         console.warn(`Unknown layout: ${currentProject.layout}, falling back to Layout1`);
         return Layout1;
     }
   };
-  
+
   if (projects.length === 0) {
     return <div>No projects to display</div>;
   }
@@ -44,7 +50,7 @@ function Carousel({ projects, onLoopStart }) {
   const LayoutComponent = getLayoutComponent()
 
   return (
-    <div className="carousel">
+    <div className="w-screen h-screen flex font-alegreya overflow-hidden">
       <LayoutComponent project={currentProject} />
     </div>
   );
