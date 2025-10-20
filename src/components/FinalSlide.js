@@ -11,7 +11,7 @@ export default function FinalSlide() {
           type: "spring",
           stiffness: 200,
           damping: 20,
-          delay: 0.5
+          delay: 1.5
         }}
         className="flex flex-col items-center"
       >
@@ -23,7 +23,7 @@ export default function FinalSlide() {
             type: "spring",
             stiffness: 260,
             damping: 20,
-            delay: 0
+            delay: 1
           }}
           className="text-center mb-16"
         >
@@ -53,29 +53,29 @@ export default function FinalSlide() {
               type: "spring",
               stiffness: 300,
               damping: 15,
-              delay: 0.5
+              delay: 1.5
             },
             rotateY: {
               type: "spring",
               stiffness: 200,
               damping: 30,
-              delay: 0.5
+              delay: 1.5
             },
             rotateX: {
               type: "spring", 
               stiffness: 250,
               damping: 25,
-              delay: 0.5
+              delay: 1.5
             },
             rotateZ: {
               type: "spring",
               stiffness: 280,
               damping: 22,
-              delay: 0.5
+              delay: 1.5
             },
             opacity: {
               duration: 0.3,
-              delay: 0.5
+              delay: 1.5
             }
           }}
           style={{ transformStyle: "preserve-3d" }}
