@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e50ef6da.css",
+    "main.js": "/static/js/main.da6d51e2.js",
+    "static/js/453.9aedb32a.chunk.js": "/static/js/453.9aedb32a.chunk.js",
+    "static/media/AlegreyaSans-Regular.woff2": "/static/media/AlegreyaSans-Regular.e4ff5452257373056bc1.woff2",
+    "index.html": "/index.html",
+    "main.e50ef6da.css.map": "/static/css/main.e50ef6da.css.map",
+    "main.da6d51e2.js.map": "/static/js/main.da6d51e2.js.map",
+    "453.9aedb32a.chunk.js.map": "/static/js/453.9aedb32a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e50ef6da.css",
+    "static/js/main.da6d51e2.js"
+  ]
+}
