@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { QRCodeSVG } from 'qrcode.react';
 
 export default function FinalSlide() {
   return (
@@ -80,12 +81,14 @@ export default function FinalSlide() {
           }}
           style={{ transformStyle: "preserve-3d" }}
         >
-          <div className="w-72 h-72 bg-white rounded-3xl p-6 shadow-2xl">
-            {/* Placeholder for QR code */}
-            <div className="w-full h-full bg-gray-200 rounded-2xl flex items-center justify-center">
-              <span className="text-gray-600 text-lg font-medium">QR Code</span>
-            </div>
-          </div>
+        <div className="w-72 h-72 bg-white rounded-3xl p-6 shadow-2xl">
+          <QRCodeSVG 
+            value="https://github.com/UW-UPL/project-carousel-slides" 
+            size={256}
+            level="H"
+            className="w-full h-full"
+          />
+        </div>
         </motion.div>
       </motion.div>
     </section>

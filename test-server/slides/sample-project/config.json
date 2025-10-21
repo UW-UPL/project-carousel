@@ -1,7 +1,7 @@
 {
   "title": "Project Title",
   "descriptionFile": "description.md",
-  "layout": "layout2",
+  "layout": "layout3",
   "images": ["placeholder.png", "placeholder.png"],
   "metadata": {
     "author": "Oliver Ohrt",

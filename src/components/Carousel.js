@@ -3,6 +3,7 @@ import { config } from '../config';
 import Layout1 from './Layout1';
 import Layout2 from './Layout2';
 import FinalSlide from './FinalSlide';
+import Layout3 from './Layout3';
 
 function Carousel({ projects, onLoopStart }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,6 +35,8 @@ function Carousel({ projects, onLoopStart }) {
         return Layout1;
       case 'layout2':
         return Layout2;
+      case 'layout3':
+        return Layout3;
       case 'final':
         return FinalSlide;
       default:
