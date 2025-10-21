@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e50ef6da.css",
-    "main.js": "/static/js/main.da6d51e2.js",
-    "static/js/453.9aedb32a.chunk.js": "/static/js/453.9aedb32a.chunk.js",
-    "static/media/AlegreyaSans-Regular.woff2": "/static/media/AlegreyaSans-Regular.e4ff5452257373056bc1.woff2",
-    "index.html": "/index.html",
-    "main.e50ef6da.css.map": "/static/css/main.e50ef6da.css.map",
-    "main.da6d51e2.js.map": "/static/js/main.da6d51e2.js.map",
-    "453.9aedb32a.chunk.js.map": "/static/js/453.9aedb32a.chunk.js.map"
+    "main.css": "/project-carousel/static/css/main.42f05334.css",
+    "main.js": "/project-carousel/static/js/main.8a7001f4.js",
+    "static/js/453.9aedb32a.chunk.js": "/project-carousel/static/js/453.9aedb32a.chunk.js",
+    "static/media/AlegreyaSans-Regular.woff2": "/project-carousel/static/media/AlegreyaSans-Regular.e4ff5452257373056bc1.woff2",
+    "index.html": "/project-carousel/index.html",
+    "main.42f05334.css.map": "/project-carousel/static/css/main.42f05334.css.map",
+    "main.8a7001f4.js.map": "/project-carousel/static/js/main.8a7001f4.js.map",
+    "453.9aedb32a.chunk.js.map": "/project-carousel/static/js/453.9aedb32a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e50ef6da.css",
-    "static/js/main.da6d51e2.js"
+    "static/css/main.42f05334.css",
+    "static/js/main.8a7001f4.js"
   ]
 }
