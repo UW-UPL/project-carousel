@@ -30,8 +30,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload only the built site
-          path: 'build'
+          path: './build'
 
       - name: Deploy to GitHub Pages
         id: deployment
