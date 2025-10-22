@@ -1,3 +1,4 @@
+import uplWhite from './uplWhite.svg'; 
 import ReactMarkdown from 'react-markdown';
 import Balatro from './Balatro';
 import { getImageLayout } from '../utils/imageLayouts';
@@ -26,7 +27,7 @@ function Layout3({ project }) {
             </h3>
           </div>
           <img 
-            src="/uplWhite.svg" 
+            src={uplWhite}
             className='h-full p-4'
             alt="UPL Logo"
           />

@@ -1,3 +1,4 @@
+import uplWhite from './uplWhite.svg'; 
 import ReactMarkdown from 'react-markdown';
 import MetaBalls from './MetaBalls';
 import GlassSurface from './GlassSurface';
@@ -66,7 +67,7 @@ function Layout2({ project }) {
               </div>
               
               <img 
-                src="/uplWhite.svg" 
+                src={uplWhite}
                 className="w-24 h-24"
                 alt="UPL Logo"
               />
