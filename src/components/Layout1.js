@@ -1,6 +1,5 @@
 import ReactMarkdown from 'react-markdown';
 import { getImageLayout } from '../utils/imageLayouts';
-import uplWhite from './uplWhite.svg'; 
 
 function Layout1({ project }) {
   return (
@@ -18,7 +17,7 @@ function Layout1({ project }) {
             </h3>
           </div>
 
-          <img src={uplWhite} className='h-full p-4'/>
+          <img src="https://www.upl.cs.wisc.edu/project-carousel/uplWhite.svg" className='h-full p-4'/>
         </div>
       </div>
 
